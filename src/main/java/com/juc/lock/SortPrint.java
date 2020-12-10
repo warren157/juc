@@ -4,6 +4,10 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * @author rui.wang
+ *
+ */
 public class SortPrint {
 
 	public static void main(String[] args) {
@@ -46,6 +50,7 @@ class Demo {
 	public void printB() {
 		lock.lock();
 		try {
+			
 			while(number !=2) {
 				b.await();
 			}
