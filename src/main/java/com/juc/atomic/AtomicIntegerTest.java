@@ -28,8 +28,11 @@ class Souce{
 	public Integer get() {
 		return ai.get();
 	}
-	
+	/**
+	 * dev test
+	 */
 	public void set() {
+		
 		System.out.println(Thread.currentThread().getName()+" ,"+ai.incrementAndGet());
 	}
 }
